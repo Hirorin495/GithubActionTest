@@ -1,0 +1,18 @@
+name: TestActions
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  scoring:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: acoring
+        run: 
+          echo test actions!
+          cat index.js
